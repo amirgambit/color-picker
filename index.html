@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Color Picker</title>
+        <link rel="stylesheet" href="app.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header><h1>Color Picker and Copier</h1></header>
+            <main>
+                <form action="">
+                    <p>Choose the color:</p>
+                    <input type="color" name="color" id="color" /><br />
+                    <p>Click to copy:</p>
+                    <label for="rgbText">RGB:</label>
+                    <input type="text" id="rgbText" name="rgbText" value="rgb(0,0,0)" readonly />
+                    <div class="tooltip">
+                        <button name="butts" id="rgbBut">
+                            <span class="tooltiptext" id="myTooltip1">Copy to clipboard</span>
+                            Copy
+                        </button>
+                    </div>
+                    <br />
+                    <label for="hexText">HEX:</label>
+                    <input type="text" id="hexText" name="HexText" value="#000000" readonly />
+                    <div class="tooltip">
+                        <button name="butts" id="hexBut">
+                            <span class="tooltiptext" id="myTooltip2">Copy to clipboard</span>
+                            Copy
+                        </button>
+                    </div>
+                </form>
+            </main>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
